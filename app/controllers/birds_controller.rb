@@ -5,6 +5,7 @@ class BirdsController < ApplicationController
       render json: birds, only: [:id, :name, :species]
     else 
       render json: { message: 'Bird not found' }
+    end
   end
 
   def show 
